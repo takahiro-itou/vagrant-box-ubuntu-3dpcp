@@ -13,7 +13,7 @@ sudo  apt  install -y  build-essential                          \
     cmake  doxygen  emacs  git  mercurial                       \
     autoconf  automake   clang  gcc  g++                        \
     libcppunit-dev  libtool  ncurses-dev                        \
-    make  time  sudo                                            \
+    make  python3  python3-pip  time  sudo                      \
     language-pack-ja-base  language-pack-ja                     \
     fcitx  fcitx-mozc  ibus-mozc
 
