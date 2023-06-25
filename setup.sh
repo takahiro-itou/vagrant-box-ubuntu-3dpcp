@@ -1,7 +1,7 @@
 #! /bin/bash  -xue
 
-boxFile='ubuntu-gui.box'
-boxName='ubuntu-bionic64-gui'
+boxFile='ubuntu-3dpcp.box'
+boxName='ubuntu-focal64-3dpcp'
 
 # Account Name of Vagrant Cloud.
 vcUser='takahiro-itou'
