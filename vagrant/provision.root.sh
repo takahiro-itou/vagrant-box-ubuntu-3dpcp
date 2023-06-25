@@ -4,26 +4,31 @@ echo  Provisioning $HOSTNAME
 
 sudo  timedatectl  set-timezone Asia/Tokyo
 
-sudo  apt  update
+sudo  apt-get  update
 
 export DEBIAN_FRONTEND=noninteractive
-sudo  -E  apt  upgrade -y
+sudo  -E  apt-get  upgrade -y
 
-sudo  apt  install -y  build-essential                          \
+sudo  apt-get  install -y  build-essential                      \
     cmake  doxygen  emacs  git  mercurial                       \
     autoconf  automake   clang  gcc  g++                        \
     libcppunit-dev  libtool  ncurses-dev                        \
-    make  time  sudo                                            \
+    make  python3  python3-pip  time  sudo                      \
     language-pack-ja-base  language-pack-ja                     \
     fcitx  fcitx-mozc  ibus-mozc
 
-sudo  apt  install -y  ubuntu-desktop
-sudo  apt  install -y  qemu
+sudo  apt-get  install -y  ubuntu-desktop
+sudo  apt-get  install -y  qemu
+
+# update pip to latest version.
+which  pip3
+pip3  --version
+pip3  install  --upgrade  pip
 
 # clean up
-sudo  apt  -y  --purge  autoremove
-sudo  apt  autoclean
-sudo  apt  clean
+sudo  apt-get  -y  --purge  autoremove
+sudo  apt-get  autoclean
+sudo  apt-get  clean
 
 sudo  rm -f  /var/lib/apt/lists/lock
 sudo  rm -f  /var/cache/apt/archives/lock
