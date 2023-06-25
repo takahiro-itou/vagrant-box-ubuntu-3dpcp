@@ -20,6 +20,11 @@ sudo  apt  install -y  build-essential                          \
 sudo  apt  install -y  ubuntu-desktop
 sudo  apt  install -y  qemu
 
+# update pip to latest version.
+which  pip3
+pip3  --version
+pip3  install  --upgrade  pip
+
 # clean up
 sudo  apt  -y  --purge  autoremove
 sudo  apt  autoclean
